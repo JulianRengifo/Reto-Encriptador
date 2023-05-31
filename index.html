@@ -25,7 +25,7 @@
         <div class="container__div">
             <section class= "txt-mensaje">
 
-                <textarea class="txt-area" required placeholder="Este es el encriptador de prueba"></textarea>
+                <textarea class="txt-area" required placeholder="Este es el encriptador de prueba" oninput="validarTexto(this)"></textarea>
     
                 <div class="botones">  <!--Los botones se ponen dentro de un div por que al ser un elemento en bloque nos perite colocar un text-align center, podemos centar los botones-->
                     <input type="button" class="btn-encriptar" value="Encriptar">
@@ -39,7 +39,7 @@
                 <div class="txt__encriptado">
 
                     <div class="muñeco">
-                        <img class="candado" src="/imagenes/candado.svg" alt="">   <!--usar imagenes svg-->
+                        <img class="candado" src="./imagenes/candado.svg" alt="">   <!--usar imagenes svg-->
                     </div>
         
                     <div class="mensaje">
@@ -69,10 +69,10 @@
 
             <div class="redes">
                 <a href="https://www.linkedin.com/in/j-e-rengifo-cortes/">
-                    <img class="linkedin" src="/imagenes/linkedin.svg">
+                    <img class="linkedin" src="./imagenes/linkedin.svg">
                 </a>
                 <a href="https://github.com/JulianRengifo?tab=repositories">
-                    <img class="github" src="/imagenes/github.svg" alt="">
+                    <img class="github" src="./imagenes/github.svg" alt="">
                 </a>
                 
 
@@ -82,7 +82,14 @@
         
     </main>
 
+    <script>
+        window.onload = function() {
+            alert("El siguiente programa solo admite letras minúsculas y no permite letras con acentos ni caracteres especiales");
+        };
+    </script>
+
     <script src="logica.js"></script>
+    <script src="requisitos.js"></script>
     
 </body>
 </html>
