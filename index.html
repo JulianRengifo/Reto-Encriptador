@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./ingreseMensaje.css">
+    <link rel="stylesheet" href="./txtEncriptado.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+        <img class="logo" src="/imagenes/Logo.png" alt="logo alura">
+
+    </header>
+
+    <main>
+        <div class="container__div">
+            <section class= "txt-mensaje">
+
+                <textarea class="txt-area" required placeholder="Este es el encriptador de prueba"></textarea>
+    
+                <div class="botones">  <!--Los botones se ponen dentro de un div por que al ser un elemento en bloque nos perite colocar un text-align center, podemos centar los botones-->
+                    <input type="button" class="btn-encriptar" value="Encriptar">
+                    <input type="button" class="btn-desencriptar" value="Desencriptar">
+                </div>
+    
+            </section>
+    
+            <section class="container__txtencriptado">
+
+                <div class="txt__encriptado">
+
+                    <div class="muñeco">
+                        <img class="candado" src="/imagenes/candado.svg" alt="">   <!--usar imagenes svg-->
+                    </div>
+        
+                    <div class="mensaje">
+                        <h3>Ningun mensaje fue encontrado</h3>
+                    </div>
+        
+                    <div class="mensaje-ingresa">
+                        <h3>Ingresa el texto que desees encriptar o desencriptar</h3>
+                    </div>
+        
+                    <div class="contenedor__mensaje-encriptado">
+                        <h3 class = "mensaje__encriptado">Mensaje Encriptado:</h3>
+                        <textarea class="texto__resultado"></textarea>
+                        <p class=""></p>
+                    </div>
+        
+                    <div class="contenedor-copiar">
+                        <input type="button" class="btn-copiar" value="Copiar">
+                    </div>
+                </div>
+                
+    
+            </section>
+        </div>
+
+        <footer class="footer">
+
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/j-e-rengifo-cortes/">
+                    <img class="linkedin" src="/imagenes/linkedin.svg">
+                </a>
+                <a href="https://github.com/JulianRengifo?tab=repositories">
+                    <img class="github" src="/imagenes/github.svg" alt="">
+                </a>
+                
+
+            </div>
+
+    </footer>
+        
+    </main>
+
+    <script src="logica.js"></script>
+    
+</body>
+</html>

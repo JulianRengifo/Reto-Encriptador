@@ -1,0 +1,85 @@
+.container__div{
+    
+    display: flex;  /* Establece un contenedor en bloque, similar a block (ocupa todo el ancho del padre). */
+    justify-content: space-between;  /* Pone el main en medio de los section */
+    width: 100%;
+    height: 87.3vh;
+}
+
+.txt-mensaje{
+    width: 70%;
+    margin-left: 20px;
+}
+
+.txt-area{
+    width: 80%;
+    height: 70%;
+    padding: 1%;
+    border-radius: 20px;
+    display: block; /* ocupa el ancho de pantalla disponible, en este caso el ancho de la section txt-mensaje */
+    margin: auto;   /* establece el margen para los cuatro lados. Es una abreviación para evitar tener que establecer cada lado por separado, auto es que el navegador lo centrara*/
+    margin-top: 20px;  /* Da un espacio entre el header hacia abajo */
+    resize: none;     /* resize establece si un elemento es redimensionable, y none no ofrece ingun metodo controlable para que el usuario cambio su tamaño */
+    font-size: 1.5em;  /* Tamaño de la letra */
+    outline: none;
+    background-color: rgba(24, 83, 89, .8);
+    color: #F2BE22;
+    font-family: tahoma;
+}
+
+::placeholder{color: #F2BE22;}
+
+.botones{
+    text-align: center;
+}
+
+.btn-encriptar, .btn-desencriptar{
+    background-color: #0B2B40;
+    color: #00a84f;
+    width: 25%;
+    height: 60px;
+    margin-top: 8%;    /* Baja los botones */
+    border-radius: 20px;
+    font-size: 1.7vw;
+    font-family: tahoma;
+    letter-spacing: 5px;  /* Le da un espacio por cada letra */
+    cursor: pointer;
+}
+
+.btn-encriptar:hover, .btn-desencriptar:hover, .btn-copiar:hover {
+    color:white;
+    background-image: linear-gradient(to right top, #14e0eb, #29e3e0, #40e5d3, #56e6c6, #6be7b9, #79eaaf, #88eca3, #98ee98, #a9f38b, #bdf67c, #d3f96e, #ebfb5f);
+}
+
+
+@media screen and (max-width:768px) {
+    .txt-area{
+        width: 100%;
+        height: 22rem;
+        font-size: 1.6em;
+    }
+    
+    .btn-encriptar, .btn-desencriptar{
+        width: 45%;
+        height: 8vh;
+        margin-top: 8%;
+        font-size: 4vw;  /* Se pone vw para que el tamaño de la letra se ajuste al cambio de tamaño */
+        
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .botones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-encriptar, .btn-desencriptar{
+        width: 100%;
+        height: 12vw;
+        margin-top: 7%;
+        font-size: 6vw;
+    }
+}

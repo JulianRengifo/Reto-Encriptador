@@ -1,0 +1,47 @@
+body{
+    background-image: url('imagenes/circuit-board.svg');
+    background-color: rgba(48, 165, 191, .4); /* agregues una «a» al prefijo rgb() y que agregues cuatro valores dentro del paréntesis. Los primeros tres números representan la intensidad del respectivo color primario 
+    («r» para rojo, «g» para verde y «b» para azul) como un número entero en la escala del 0 al 255. El cuarto valor, correspondiente a «a», va del 0 al 1 y sirve para establecer la transparencia del color. */
+    /*background-image: linear-gradient(to right top, #14e0eb, #29e3e0, #40e5d3, #56e6c6, #6be7b9, #79eaaf, #88eca3, #98ee98, #a9f38b, #bdf67c, #d3f96e, #ebfb5f);*/
+}
+
+section{
+    width: 40%;
+    height: 100%;
+}
+
+.container__div{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1.5em;
+}
+
+
+/* ----------------- Responsive ------------------- */
+
+@media only screen and (max-width: 768px) {
+    
+    .container__div{
+        height: auto;
+    }
+
+    .txt-mensaje{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin:0 auto;
+    }
+
+    
+
+    
+
+    
+
+    
+
+    
+}
+
+/* -------------------------------------------------------------------------------------- */
+
